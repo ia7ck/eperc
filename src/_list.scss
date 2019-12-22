@@ -1,0 +1,11 @@
+ul {
+  & > ul {
+    padding-left: 15px;
+  }
+}
+
+ol {
+  & > ol {
+    padding-left: 15px;
+  }
+}

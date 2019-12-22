@@ -1,6 +1,8 @@
 body {
   color: $text-color;
   font-family: system-ui, -apple-system, "Hiragino Sans", "Yu Gothic UI", "Segoe UI", "Meiryo", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
 }
 
 a {

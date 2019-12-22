@@ -107,13 +107,13 @@ template { display: none; }
 /** Add the correct display in IE 10. */
 [hidden] { display: none; }
 
-body { font-family: system-ui, -apple-system, "Hiragino Sans", "Yu Gothic UI", "Segoe UI", "Meiryo", sans-serif; color: #333; }
+body { color: #333; font-family: system-ui, -apple-system, "Hiragino Sans", "Yu Gothic UI", "Segoe UI", "Meiryo", sans-serif; font-size: 16px; line-height: 1.5; }
 
 a { text-decoration: none; }
 
 a:hover { text-decoration: underline; }
 
-.heading { font-weight: normal; }
+.h1, .h2, .h3, .h4, .h5 { font-weight: normal; }
 
 .h1 { font-size: 2rem; }
 
@@ -132,3 +132,7 @@ a:hover { text-decoration: underline; }
 .btn-primary { background: #5facdd; border: none; color: white; }
 
 .btn-primary:hover { background: #4aa1d9; }
+
+ul > ul { padding-left: 15px; }
+
+ol > ol { padding-left: 15px; }
