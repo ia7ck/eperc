@@ -1,0 +1,18 @@
+.btn {
+  background: white;
+  border: solid 1px #aaa;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 0.6rem 1rem;
+  &:hover {
+    background: darken($color: white, $amount: 5%);
+  }
+  &-primary {
+    background: $primary-color;
+    border: none;
+    color: white;
+    &:hover {
+      background: darken($color: $primary-color, $amount: 5%);
+    }
+  }
+}
