@@ -5,11 +5,12 @@ const rename = require("gulp-rename");
 const autoprefixer = require("gulp-autoprefixer");
 const htmlbeautify = require('gulp-html-beautify');
 const ejs = require("gulp-ejs");
+const highlight = require("gulp-prism");
 
 // yarn run gulp watch
 gulp.task("watch", function () {
   gulp.watch("./src/*.scss", gulp.series("build"));
-  gulp.watch("./docs/src/*.ejs", gulp.series("docs"));
+  gulp.watch(["./docs/src/*.ejs", "./docs/src/samples/*.html"], gulp.series("docs"));
 });
 
 gulp.task("build", function (done) {
@@ -35,6 +36,7 @@ gulp.task("docs", function (done) {
     .pipe(htmlbeautify({
       "indent_size": 2,
     }))
+    .pipe(highlight())
     .pipe(rename("index.html"))
     .pipe(gulp.dest('./docs'));
   done();

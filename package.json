@@ -12,6 +12,7 @@
     "gulp-clean-css": "^4.2.0",
     "gulp-ejs": "^5.0.0",
     "gulp-html-beautify": "^1.0.1",
+    "gulp-prism": "^1.2.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.0.2"
   }
