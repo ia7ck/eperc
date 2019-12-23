@@ -159,6 +159,12 @@ ol > ol { padding-left: 15px; }
 
 .row .col.col-6 { -webkit-box-flex: 0; flex: 0 0 100%; width: 100%; }
 
+.row .col.col-auto { -webkit-box-flex: 1; flex-grow: 1; }
+
+.row.row-gapless { margin-left: 0; width: 100%; }
+
+.row.row-gapless .col { padding: 0; }
+
 @media (max-width: 640px) { .row { -webkit-box-orient: vertical; -webkit-box-direction: normal; flex-direction: column; } }
 
 .tbl-container { overflow-x: auto; }

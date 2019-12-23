@@ -41,6 +41,16 @@
       flex: 0 0 100%;
       width: 100%;
     }
+    &.col-auto {
+      flex-grow: 1;
+    }
+  }
+  &.row-gapless {
+    margin-left: 0;
+    width: 100%;
+    .col {
+      padding: 0;
+    }
   }
 }
 
