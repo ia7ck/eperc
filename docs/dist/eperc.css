@@ -111,9 +111,9 @@ template { display: none; }
 
 body { box-sizing: border-box; color: #333; font-family: system-ui, -apple-system, "Hiragino Sans", "Yu Gothic UI", "Segoe UI", "Meiryo", sans-serif; font-size: 16px; line-height: 1.5; }
 
-a { text-decoration: none; }
+a { color: #128cff; text-decoration: none; }
 
-a:hover { text-decoration: underline; }
+a:hover { color: #0058ab; }
 
 .h1, .h2, .h3, .h4, .h5 { font-weight: normal; }
 

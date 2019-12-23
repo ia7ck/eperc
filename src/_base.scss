@@ -13,8 +13,9 @@ body {
 }
 
 a {
+  color: $link-color;
   text-decoration: none;
   &:hover {
-    text-decoration: underline;
+    color: darken($color: $link-color, $amount: 20%);
   }
 }
