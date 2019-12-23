@@ -1,0 +1,9 @@
+pre {
+  background: $bg-color;
+  border-left: 3px solid $primary-color;
+  code {
+    display: block;
+    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    padding: 1rem 1.5rem;
+  }
+}

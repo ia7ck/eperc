@@ -176,3 +176,7 @@ table.tbl-striped tbody tr:nth-of-type(odd) { background: #f7f7f7; }
 table.tbl-hover tbody tr:hover { background: #f2f2f2; }
 
 table td, table th { border-bottom: solid 1px #999; padding: 1rem 0.5rem; }
+
+pre { background: #f2f2f2; border-left: 3px solid #ff92ca; }
+
+pre code { display: block; font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace; padding: 1rem 1.5rem; }
