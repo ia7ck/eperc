@@ -1,4 +1,11 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
+  box-sizing: border-box;
   color: $text-color;
   font-family: system-ui, -apple-system, "Hiragino Sans", "Yu Gothic UI", "Segoe UI", "Meiryo", sans-serif;
   font-size: $font-size;
