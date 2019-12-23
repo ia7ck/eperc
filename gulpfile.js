@@ -1,11 +1,15 @@
-var gulp = require("gulp");
-var sass = require("gulp-sass");
-var cleancss = require("gulp-clean-css");
-var rename = require("gulp-rename");
-var autoprefixer = require("gulp-autoprefixer");
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const cleancss = require("gulp-clean-css");
+const rename = require("gulp-rename");
+const autoprefixer = require("gulp-autoprefixer");
+const fileinclude = require("gulp-file-include");
+const htmlbeautify = require('gulp-html-beautify');
 
+// yarn run gulp watch
 gulp.task("watch", function () {
-  gulp.watch("./**/*.scss", gulp.series("build"));
+  gulp.watch("./src/*.scss", gulp.series("build"));
+  gulp.watch("./docs/src/*.html", gulp.series("docs"));
 });
 
 gulp.task("build", function (done) {
@@ -22,3 +26,18 @@ gulp.task("build", function (done) {
     .pipe(gulp.dest("./docs/dist"));
   done();
 });
+
+// https://www.npmjs.com/package/gulp-file-include
+// https://www.npmjs.com/package/gulp-html-beautify
+gulp.task("docs", function (done) {
+  gulp.src(["./docs/src/index.html"])
+    .pipe(fileinclude())
+    .pipe(htmlbeautify({
+      "indent_size": 2,
+    }))
+    .pipe(gulp.dest('./docs'));
+  done();
+});
+
+// yarn run gulp
+gulp.task("default", gulp.parallel("build", "docs"));
