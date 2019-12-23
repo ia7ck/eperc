@@ -1,9 +1,10 @@
+.tbl-container {
+  overflow-x: auto;
+}
+
 table {
   border-spacing: 0; // border-collapse: collapse; でも同じ?
   width: 100%;
-  &.tbl-scroll {
-    overflow-x: auto;
-  }
   &.tbl-striped {
     tbody {
       tr:nth-of-type(odd) {
