@@ -165,8 +165,6 @@ ol > ol { padding-left: 15px; }
 
 .row.row-gapless .col { padding: 0; }
 
-@media (max-width: 640px) { .row { -webkit-box-orient: vertical; -webkit-box-direction: normal; flex-direction: column; } }
-
 .tbl-container { overflow-x: auto; }
 
 table { border-spacing: 0; width: 100%; }
