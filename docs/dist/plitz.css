@@ -181,7 +181,7 @@ pre code { display: block; font-family: Consolas, Monaco, "Andale Mono", "Ubuntu
 
 .form-label { display: inline-block; padding: 0.5em 0; }
 
-.form-input, .form-select select { -webkit-appearance: none; -moz-appearance: none; appearance: none; background: white; width: 100%; padding: 0.5em 0.6em; border: 1px solid #999; border-radius: 3px; outline: none; }
+.form-input, .form-select select { -webkit-appearance: none; -moz-appearance: none; appearance: none; background: white; border: 1px solid #999; border-radius: 3px; outline: none; padding: 0.5em 0.6em; width: 100%; }
 
 .form-input:focus, .form-select select:focus { border-color: #ff92ca; }
 
@@ -203,7 +203,7 @@ pre code { display: block; font-family: Consolas, Monaco, "Andale Mono", "Ubuntu
 
 .form-select:hover::after { border-color: #ff92ca; }
 
-.checkbox-label { padding-right: .5em; }
+.checkbox-label { padding-right: 0.5em; }
 
 .checkbox-label:hover { cursor: pointer; }
 
