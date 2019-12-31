@@ -4,7 +4,7 @@
 }
 
 .form-input,
-.form-select {
+.form-select select {
   appearance: none;
   background: white;
   width: 100%;
@@ -24,8 +24,32 @@
 }
 
 .form-select {
-  &:hover {
+  display: block;
+  position: relative; // for pseudo elements
+  width: 100%;
+  & select {
     cursor: pointer;
+  }
+  &::after {
+    // https://bagelee.com/design/css/css-triangle/
+    border: 0.2rem solid #999;
+    border-bottom: 0;
+    border-left: 0;
+    border-radius: 0.2rem;
+    content: "";
+    height: 0.8rem;
+    pointer-events: none; // https://developer.mozilla.org/ja/docs/Web/CSS/pointer-events
+    position: absolute;
+    right: 0.7rem;
+    top: 0.5rem;
+    transform: rotate(135deg);
+    width: 0.8rem;
+    z-index: 5;
+  }
+  &:hover {
+    &::after {
+      border-color: $primary-color;
+    }
   }
 }
 
