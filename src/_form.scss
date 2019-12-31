@@ -1,5 +1,5 @@
 .form-label {
-  display: block;
+  display: inline-block;
   padding: 0.5em 0;
 }
 
@@ -25,6 +25,16 @@
 
 .form-select {
   &:hover {
+    cursor: pointer;
+  }
+}
+
+.checkbox-label {
+  padding-right: .5em;
+  &:hover {
+    cursor: pointer;
+  }
+  & input {
     cursor: pointer;
   }
 }
