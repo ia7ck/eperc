@@ -194,3 +194,5 @@ pre code { display: block; font-family: Consolas, Monaco, "Andale Mono", "Ubuntu
 .form-input::-ms-input-placeholder { color: #999; }
 
 .form-input::placeholder { color: #999; }
+
+.form-select:hover { cursor: pointer; }

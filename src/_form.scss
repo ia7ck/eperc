@@ -22,3 +22,9 @@
     color: #999;
   }
 }
+
+.form-select {
+  &:hover {
+    cursor: pointer;
+  }
+}
