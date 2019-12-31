@@ -175,6 +175,22 @@ table.tbl-hover tbody tr:hover { background: #f2f2f2; }
 
 table td, table th { border-bottom: solid 1px #999; padding: 1rem 0.5rem; }
 
-pre { background: #f2f2f2; border-left: 3px solid #ff92ca; }
+pre { background: #f2f2f2; border-left: 3px solid #ff92ca; margin: 1em 0; }
 
 pre code { display: block; font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace; padding: 1rem 1.5rem; }
+
+.form-label { display: block; padding: 0.5em 0; }
+
+.form-input, .form-select { -webkit-appearance: none; -moz-appearance: none; appearance: none; background: white; width: 100%; padding: 0.5em 0.6em; border: 1px solid #999; border-radius: 3px; outline: none; }
+
+.form-input:focus, .form-select:focus { border-color: #ff92ca; }
+
+.form-input::-webkit-input-placeholder { color: #999; }
+
+.form-input::-moz-placeholder { color: #999; }
+
+.form-input:-ms-input-placeholder { color: #999; }
+
+.form-input::-ms-input-placeholder { color: #999; }
+
+.form-input::placeholder { color: #999; }
