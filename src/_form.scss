@@ -53,12 +53,39 @@
   }
 }
 
-.checkbox-label {
+.form-checkbox {
+  cursor: pointer;
   padding-right: 0.5em;
-  &:hover {
-    cursor: pointer;
-  }
-  & input {
-    cursor: pointer;
+  position: relative;
+  & input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    & + .form-label {
+      padding-left: 1.3rem;
+      &::before {
+        border: solid 1px $border-color;
+        border-radius: 3px;
+        content: "";
+        height: 1rem;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 1rem;
+      }
+    }
+    &:checked {
+      & + .form-label {
+        &::after {
+          background: $primary-color;
+          border-radius: 2px;
+          content: "";
+          height: 0.6rem;
+          left: 0.2rem;
+          position: absolute;
+          top: 0.2rem;
+          width: 0.6rem;
+        }
+      }
+    }
   }
 }
