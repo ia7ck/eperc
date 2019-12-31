@@ -7,7 +7,7 @@
 .form-select select {
   appearance: none;
   background: white;
-  border: 1px solid #999;
+  border: 1px solid $border-color;
   border-radius: 3px;
   outline: none;
   padding: 0.5em 0.6em;
@@ -19,7 +19,7 @@
 
 .form-input {
   &::placeholder {
-    color: #999;
+    color: $border-color;
   }
 }
 
@@ -32,7 +32,7 @@
   }
   &::after {
     // https://bagelee.com/design/css/css-triangle/
-    border: 0.2rem solid #999;
+    border: 0.2rem solid $border-color;
     border-bottom: 0;
     border-left: 0;
     border-radius: 0.2rem;

@@ -22,7 +22,7 @@ table {
   // うーん
   td,
   th {
-    border-bottom: solid 1px #999;
+    border-bottom: solid 1px $border-color;
     padding: 1rem 0.5rem;
   }
 }
