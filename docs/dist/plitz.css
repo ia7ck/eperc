@@ -181,7 +181,7 @@ pre code { display: block; font-family: Consolas, Monaco, "Andale Mono", "Ubuntu
 
 .form-label { display: inline-block; padding: 0.5em 0; }
 
-.form-input, .form-select select { -webkit-appearance: none; -moz-appearance: none; appearance: none; background: white; border: 1px solid #999; border-radius: 3px; outline: none; padding: 0.5em 0.6em; width: 100%; }
+.form-input, .form-select select { -webkit-appearance: none; -moz-appearance: none; appearance: none; background: white; border: 1px solid #999; border-radius: 3px; outline: none; padding: 0.5em 0.6em; -webkit-transition: border-color 0.3s; transition: border-color 0.3s; width: 100%; }
 
 .form-input:focus, .form-select select:focus { border-color: #ff92ca; }
 
@@ -194,6 +194,8 @@ pre code { display: block; font-family: Consolas, Monaco, "Andale Mono", "Ubuntu
 .form-input::-ms-input-placeholder { color: #999; }
 
 .form-input::placeholder { color: #999; }
+
+.form-select select { -webkit-transition: none; transition: none; }
 
 .form-select { display: block; position: relative; width: 100%; }
 

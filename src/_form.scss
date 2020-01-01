@@ -11,6 +11,7 @@
   border-radius: 3px;
   outline: none;
   padding: 0.5em 0.6em;
+  transition: border-color 0.3s;
   width: 100%;
   &:focus {
     border-color: $primary-color;
@@ -21,6 +22,10 @@
   &::placeholder {
     color: $border-color;
   }
+}
+
+.form-select select {
+  transition: none;
 }
 
 .form-select {
