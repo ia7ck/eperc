@@ -54,36 +54,51 @@
 }
 
 .form-checkbox {
-  cursor: pointer;
+  display: block;
   padding-right: 0.5em;
   position: relative;
   & input[type="checkbox"] {
     opacity: 0;
+    outline: none;
     position: absolute;
-    & + .form-label {
+    & + .checkbox-label {
       padding-left: 1.3rem;
       &::before {
         border: solid 1px $border-color;
         border-radius: 3px;
         content: "";
-        height: 1rem;
+        cursor: pointer;
+        height: 1.1rem;
         left: 0;
         position: absolute;
-        top: 0;
-        width: 1rem;
+        top: 0.25rem;
+        transition: all 0.3s;
+        width: 1.1rem;
+      }
+      &::after {
+        border: 0.2rem solid lighten($color: $border-color, $amount: 30%);
+        border-radius: 1px;
+        border-right: 0;
+        border-top: 0;
+        content: "";
+        cursor: pointer;
+        height: 0.55rem;
+        left: 0.18rem;
+        position: absolute;
+        top: 0.42rem;
+        transform: rotate(-45deg);
+        transition: all 0.3s;
+        width: 0.8rem;
       }
     }
     &:checked {
-      & + .form-label {
-        &::after {
+      & + .checkbox-label {
+        &::before {
           background: $primary-color;
-          border-radius: 2px;
-          content: "";
-          height: 0.6rem;
-          left: 0.2rem;
-          position: absolute;
-          top: 0.2rem;
-          width: 0.6rem;
+          border-color: $primary-color;
+        }
+        &::after {
+          border-color: white;
         }
       }
     }
