@@ -36,24 +36,21 @@
     cursor: pointer;
   }
   &::after {
-    // https://bagelee.com/design/css/css-triangle/
-    border: 0.2rem solid $border-color;
-    border-bottom: 0;
-    border-left: 0;
-    border-radius: 0.2rem;
+    // https://www.granfairs.com/blog/staff/make-triangle-with-css
+    border: 0.5rem solid transparent;
+    border-top: 0.6rem solid $border-color;
     content: "";
-    height: 0.8rem;
+    height: 0;
     pointer-events: none; // https://developer.mozilla.org/ja/docs/Web/CSS/pointer-events
     position: absolute;
-    right: 0.7rem;
-    top: 0.5rem;
-    transform: rotate(135deg);
-    width: 0.8rem;
+    right: 0.6rem;
+    top: 0.8rem;
+    width: 0;
     z-index: 5;
   }
   &:hover {
     &::after {
-      border-color: $primary-color;
+      border-top-color: $primary-color;
     }
   }
 }

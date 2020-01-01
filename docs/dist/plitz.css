@@ -201,9 +201,9 @@ pre code { display: block; font-family: Consolas, Monaco, "Andale Mono", "Ubuntu
 
 .form-select select { cursor: pointer; }
 
-.form-select::after { border: 0.2rem solid #999; border-bottom: 0; border-left: 0; border-radius: 0.2rem; content: ""; height: 0.8rem; pointer-events: none; position: absolute; right: 0.7rem; top: 0.5rem; -webkit-transform: rotate(135deg); transform: rotate(135deg); width: 0.8rem; z-index: 5; }
+.form-select::after { border: 0.5rem solid transparent; border-top: 0.6rem solid #999; content: ""; height: 0; pointer-events: none; position: absolute; right: 0.6rem; top: 0.8rem; width: 0; z-index: 5; }
 
-.form-select:hover::after { border-color: #ff92ca; }
+.form-select:hover::after { border-top-color: #ff92ca; }
 
 .form-checkbox { display: block; padding-right: 0.5em; position: relative; }
 
