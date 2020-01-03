@@ -1,0 +1,14 @@
+.accordion {
+  .accordion-header {
+    cursor: pointer;
+    display: block; // ?
+  }
+  .accordion-body {
+    max-height: 0; // height だと transition が効かないため
+    overflow: hidden;
+    transition: max-height 0.2s;
+  }
+  input:checked + .accordion-body {
+    max-height: 100vh;
+  }
+}

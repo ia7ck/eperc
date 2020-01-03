@@ -218,3 +218,9 @@ pre code { display: block; font-family: Consolas, Monaco, "Andale Mono", "Ubuntu
 .form-checkbox input[type="checkbox"]:checked + .checkbox-label::before { background: #ff92ca; border-color: #ff92ca; }
 
 .form-checkbox input[type="checkbox"]:checked + .checkbox-label::after { border-color: white; }
+
+.accordion .accordion-header { cursor: pointer; display: block; }
+
+.accordion .accordion-body { max-height: 0; overflow: hidden; -webkit-transition: max-height 0.2s; transition: max-height 0.2s; }
+
+.accordion input:checked + .accordion-body { max-height: 100vh; }
