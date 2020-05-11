@@ -5,11 +5,11 @@
 
 .form-input,
 .form-select select {
-  appearance: none;
+  appearance: none; // select 要素のデフォルトの三角を消す
   background: white;
   border: 1px solid $border-color;
   border-radius: 3px;
-  outline: none;
+  outline: none; // focus したときの border を上で設定したものにする 
   padding: 0.5em 0.6em;
   transition: border-color 0.3s;
   width: 100%;
@@ -60,11 +60,12 @@
   padding-right: 0.5em;
   position: relative;
   & input[type="checkbox"] {
-    opacity: 0;
+    opacity: 0; // デフォルトのチェックボックスを消す
     outline: none;
     position: absolute;
     & + .checkbox-label {
       padding-left: 1.3rem;
+      // 四角をつくる
       &::before {
         border: solid 1px $border-color;
         border-radius: 3px;
@@ -77,6 +78,7 @@
         transition: all 0.3s;
         width: 1.1rem;
       }
+      // チェックをつくる
       &::after {
         border: 0.2rem solid lighten($color: $border-color, $amount: 30%);
         border-radius: 1px;

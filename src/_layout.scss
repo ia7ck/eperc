@@ -8,10 +8,10 @@
 .row {
   display: flex;
   flex-direction: row;
-  margin-left: -1rem; // trick
+  margin-left: -1rem; // 左端の要素の左に padding が入るのを打ち消す trick
   width: calc(100% + 2rem);
   &.row-wrap {
-    flex-wrap: wrap;
+    flex-wrap: wrap; // 行の幅をはみ出す場合に折り返す
   }
   .col {
     flex: 1 1 auto;
