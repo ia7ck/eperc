@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Plitz</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css" />
+  <link rel="stylesheet" href="./dist/plitz.css">
+</head>
+
+<body>
+  <main class="container">
+    <h1 class="heading h1">Plitz</h1>
+    <style>
+      nav.menu {
+        margin: 0 auto;
+        font-size: 1.2rem;
+      }
+
+      nav.menu li {
+        padding: 0.2em 0;
+      }
+    </style>
+    <nav class="menu">
+      <ul>
+        <li><a href="#headings">Headings</a></li>
+        <li><a href="#buttons">Buttons</a></li>
+        <li><a href="#lists">Lists</a></li>
+        <li><a href="#layouts">Layouts</a></li>
+        <li><a href="#tables">Tables</a></li>
+        <li><a href="#codes">Codes</a></li>
+        <li><a href="#forms">Forms</a></li>
+        <li><a href="accordions">Accordions</a></li>
+      </ul>
+    </nav>
+    <style>
+      .anchor-link {
+        font-size: 0.9em;
+      }
+
+      pre[class*=language-] {
+        background: #f2f2f2;
+        margin: 1em 0;
+        padding: 0;
+      }
+
+      code[class*=language-] {
+        overflow-x: auto;
+      }
+    </style>
+    <section>
+      <h2 id="headings" class="heading h2">
+        <span>Headings</span>
+        <a href="#headings" class="anchor-link">#</a>
+      </h2>
+      <div class="content">
+        <%- include("./_headings.ejs") %>
+      </div>
+    </section>
+    <section>
+      <h2 id="buttons" class="heading h2">
+        <span>Buttons</span>
+        <a href="#buttons" class="anchor-link">#</a>
+      </h2>
+      <div class="content">
+        <%- include("./_buttons.ejs") %>
+      </div>
+    </section>
+    <section>
+      <h2 id="lists" class="heading h2">
+        <span>Lists</span>
+        <a href="#lists" class="anchor-link">#</a>
+      </h2>
+      <div class="content">
+        <%- include("./_lists.ejs") %>
+      </div>
+    </section>
+    <section>
+      <h2 id="layouts" class="heading h2">
+        <span>Layouts</span>
+        <a href="#layouts" class="anchor-link">#</a>
+      </h2>
+      <div class="content">
+        <%- include("./_layouts.ejs") %>
+      </div>
+    </section>
+    <section>
+      <h2 id="tables" class="heading h2">
+        <span>Tables</span>
+        <a href="#tables" class="anchor-link">#</a>
+      </h2>
+      <div class="content">
+        <%- include("./_tables.ejs") %>
+      </div>
+    </section>
+    <section>
+      <h2 id="codes" class="heading h2">
+        <span>Codes</span>
+        <a href="#codes" class="anchor-link">#</a>
+      </h2>
+      <div class="content">
+        <%- include("./_codes.ejs") %>
+      </div>
+    </section>
+    <section>
+      <h2 id="forms" class="heading h2">
+        <span>Forms</span>
+        <a href="#forms" class="anchor-link">#</a>
+      </h2>
+      <div class="content">
+        <%- include("./_form.ejs") %>
+      </div>
+    </section>
+    <section>
+      <h2 id="accordions" class="heading h2">
+        <span>Accordions</span>
+        <a href="#accordions" class="anchor-link">#</a>
+      </h2>
+      <div class="content">
+        <%- include("./_accordions.ejs") %>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

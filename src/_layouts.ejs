@@ -1,0 +1,70 @@
+<style>
+  .col-item {
+    background: #f2f2f2;
+    border-radius: 2px;
+    display: block;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+  }
+</style>
+<h3 class="heading h3">Columns</h3>
+<div class="row">
+  <div class="col"><span class="col-item">.col</span></div>
+  <div class="col"><span class="col-item">.col</span></div>
+  <div class="col"><span class="col-item">.col</span></div>
+  <div class="col"><span class="col-item">.col</span></div>
+  <div class="col"><span class="col-item">.col</span></div>
+  <div class="col"><span class="col-item">.col</span></div>
+</div>
+
+<pre class="language-html"><code class="language-html"><%= include("./samples/layouts_basic.html") %></code></pre>
+
+<h3 class="heading h3">Wrap elements</h3>
+<div class="row row-wrap">
+  <div class="col col-1"><span class="col-item">.col.col-1</span></div>
+  <div class="col col-2"><span class="col-item">.col.col-2</span></div>
+  <div class="col col-4"><span class="col-item">.col.col-4</span></div>
+</div>
+
+<pre class="language-html"><code class="language-html"><%= include("./samples/layouts_wrap.html") %></code></pre>
+
+<h3 class="heading h3">Auto width</h3>
+<div class="row">
+  <div class="col col-1"><span class="col-item">.col.col-1</span></div>
+  <div class="col col-2"><span class="col-item">.col.col-2</span></div>
+  <div class="col col-auto"><span class="col-item">.col.col-auto</span></div>
+</div>
+
+<pre class="language-html"><code class="language-html"><%= include("./samples/layouts_auto_width.html") %></code></pre>
+
+<h3 class="heading h3">Nesting</h3>
+<div class="row">
+  <div class="col col-2"><span class="col-item">.col.col-2</span></div>
+  <div class="col col-4">
+    <span class="col-item">.col.col-4</span>
+    <div class="row">
+      <div class="col col-3"><span class="col-item">col.col-3</span></div>
+      <div class="col col-3"><span class="col-item">col.col-3</span></div>
+    </div>
+  </div>
+</div>
+
+<pre class="language-html"><code class="language-html"><%= include("./samples/layouts_nest.html") %></code></pre>
+
+<h3 class="heading h3">Gapless</h3>
+<style>
+  .row-gapless .col-item {
+    border: 1px solid #333;
+  }
+</style>
+<div class="row row-gapless">
+  <div class="col col-1"><span class="col-item">.col.col-1</span></div>
+  <div class="col col-3"><span class="col-item">.col.col-3</span></div>
+  <div class="col col-2"><span class="col-item">.col.col-2</span></div>
+</div>
+
+<pre class="language-html"><code class="language-html"><%= include("./samples/layouts_gapless.html") %></code></pre>
