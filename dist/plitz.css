@@ -111,9 +111,9 @@ template { display: none; }
 
 body { box-sizing: border-box; color: #333; font-family: system-ui, -apple-system, "Hiragino Sans", "Yu Gothic UI", "Segoe UI", "Meiryo", sans-serif; font-size: 16px; line-height: 1.5; }
 
-a { color: #128cff; text-decoration: none; }
+a { color: #128cff; text-decoration: none; outline: none; }
 
-a:hover { color: #0058ab; }
+a:hover, a:focus { color: #0058ab; }
 
 .h1, .h2, .h3, .h4, .h5 { font-weight: normal; }
 
@@ -127,13 +127,13 @@ a:hover { color: #0058ab; }
 
 .h5 { font-size: 1.2rem; }
 
-.btn { background: white; border: solid 1px #999; border-radius: 3px; cursor: pointer; padding: 0.6rem 1rem; }
+.btn { background: white; border: solid 1px #999; border-radius: 3px; cursor: pointer; padding: 0.6rem 1rem; outline: none; }
 
-.btn:hover { background: #f2f2f2; }
+.btn:hover, .btn:focus { background: #f2f2f2; }
 
 .btn-primary { background: #ff92ca; border: none; color: white; }
 
-.btn-primary:hover { background: #ff79be; }
+.btn-primary:hover, .btn-primary:focus { background: #ff79be; }
 
 ul > ul { padding-left: 15px; }
 
