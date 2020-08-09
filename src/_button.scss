@@ -4,14 +4,17 @@
   border-radius: 3px;
   cursor: pointer;
   padding: 0.6rem 1rem;
-  &:hover {
+  outline: none; // focus のときに出るのを防ぐ
+  &:hover,
+  &:focus {
     background: $bg-color;
   }
   &-primary {
     background: $primary-color;
     border: none;
     color: white;
-    &:hover {
+    &:hover,
+    &:focus {
       background: darken($color: $primary-color, $amount: 5%);
     }
   }
