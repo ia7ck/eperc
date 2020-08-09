@@ -33,10 +33,10 @@ gulp.task("build", function (done) {
 gulp.task("docs", function (done) {
   gulp.src(["./docs/src/index.ejs"])
     .pipe(ejs())
+    .pipe(highlight())
     .pipe(htmlbeautify({
       "indent_size": 2,
     }))
-    .pipe(highlight())
     .pipe(rename("index.html"))
     .pipe(gulp.dest('./docs'));
   done();
