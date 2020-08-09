@@ -2,7 +2,6 @@
   "name": "plitz",
   "version": "0.0.1",
   "description": "css",
-  "main": "dist/plitz.css",
   "repository": "git@github.com:ia7ck/plitz.git",
   "author": "ia7ck <ia7ck.k@gmail.com>",
   "license": "MIT",
